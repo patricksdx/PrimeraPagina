@@ -1,6 +1,7 @@
 import logo from './icons/Logo.png'
 
 function Header() {
+
   return (
     <div className='text-white flex w-full md:w-4/6 xl:w-4/5 md:m-auto' >
       <div className='flex m-6 md:m-4'>
