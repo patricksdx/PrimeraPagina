@@ -2,14 +2,14 @@ import icono from './icons/icono1.jpg'
 
 function Header() {
   return (
-    <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-lg flex items-center space-x-4">
-      <div class="shrink-0">
-        <img class="h-12 w-12" src={icono} alt="ChitChat Logo" />
-      </div>
-      <div>
-        <div class="text-xl font-medium text-black">ChitChat</div>
-        <p class="text-slate-500">You have a new message!</p>
-      </div>
+    <div className='text-white flex m-auto w-4/5' >
+      <h1 className='m-4'>MARCA</h1>
+      <ul className='flex ml-auto' >
+        <li className='m-4'><a href='#'>Home</a></li>
+        <li className='m-4'><a href='#'>About</a></li>
+        <li className='m-4'><a href='#'>Services</a></li>
+        <li className='m-4'><a href='#'>Contact</a></li>
+      </ul>
     </div>
   );
 }
