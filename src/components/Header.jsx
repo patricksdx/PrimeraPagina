@@ -3,7 +3,7 @@ import logo from './icons/Logo.png'
 function Header() {
 
   return (
-    <div className='text-white flex w-full md:w-4/6 xl:w-4/5 md:m-auto' >
+    <div className='text-slate-700 flex w-full md:w-4/6 xl:w-4/5 md:m-auto' >
       <div className='flex m-6 md:m-4'>
       <picture>
         <img src={logo} className='w-5 mr-4'></img>
