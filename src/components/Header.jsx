@@ -11,10 +11,10 @@ function Header() {
       <h1>MARCA</h1>
       </div>
       <ul className='hidden ml-auto md:flex xl:flex' >
-        <li className='m-4'><a href='#'>Home</a></li>
-        <li className='m-4'><a href='#'>About</a></li>
-        <li className='m-4'><a href='#'>Services</a></li>
-        <li className='m-4'><a href='#'>Contact</a></li>
+        <li className='w-full p-4 rounded-lg hover:text-white hover:bg-slate-700'><a href='#'>Home</a></li>
+        <li className='w-full p-4 rounded-lg hover:text-white hover:bg-slate-700'><a href='#'>About</a></li>
+        <li className='w-full p-4 rounded-lg hover:text-white hover:bg-slate-700'><a href='#'>Services</a></li>
+        <li className='w-full p-4 rounded-lg hover:text-white hover:bg-slate-700'><a href='#'>Contact</a></li>
       </ul>
     </div>
   );

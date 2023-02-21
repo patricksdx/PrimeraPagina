@@ -3,7 +3,7 @@ import banner from './img/banner1.jpg'
 function Banner() {
 
   return (
-    <section class="relative bg-[url(https://cdn.pixabay.com/photo/2014/08/29/03/02/horses-430441_1280.jpg)] bg-cover bg-center bg-no-repeat">
+    <section class="relative bg-[url()] bg-cover bg-center bg-no-repeat">
       <div class="absolute inset-0 bg-white/75 sm:bg-transparent sm:bg-gradient-to-r sm:from-white/95 sm:to-white/25"></div>
 
       <div class="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
