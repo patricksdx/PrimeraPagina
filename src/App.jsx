@@ -8,7 +8,6 @@ function App() {
     <div className="bg-white min-h-screen">
       <Header></Header>
       <Banner></Banner>
-      <MP3></MP3>
     </div>
   )
 }
