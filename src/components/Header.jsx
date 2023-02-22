@@ -1,4 +1,5 @@
 import logo from './icons/Logo.png'
+import { FaAlignJustify } from 'react-icons/fa';
  
 function Header() {
 
@@ -9,6 +10,11 @@ function Header() {
         <img src={logo} className='w-5 mr-4'></img>
       </picture>
       <h1>MARCA</h1>
+      </div>
+      <div className='m-6 ml-auto md:m-4 md:hidden'>
+        <button>
+          <FaAlignJustify></FaAlignJustify>
+        </button>
       </div>
       <ul className='hidden ml-auto md:flex xl:flex' >
         <li className='w-full p-4 rounded-lg hover:text-white hover:bg-slate-700'><a href='#'>Home</a></li>
