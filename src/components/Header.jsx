@@ -20,6 +20,7 @@ function Header() {
             const boton1 = document.querySelector("#boton1");
 
             opciones.removeAttribute("class"),
+              opciones.setAttribute("class","col-start-1 col-end-3 text-center");
               boton.setAttribute("class", "hidden"),
               boton1.setAttribute("class", "block");
           }}
@@ -43,7 +44,7 @@ function Header() {
           <FaAlignJustify></FaAlignJustify>
         </button>
       </div>
-      <ul id="opciones" className="hidden ml-auto md:flex xl:flex">
+      <ul id="opciones" className="hidden ml-auto md:flex xl:flex col-end">
         <li className="w-full p-4 rounded-lg hover:text-white hover:bg-slate-700">
           <a href="#">Home</a>
         </li>
