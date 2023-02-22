@@ -3,8 +3,23 @@ import { FaAlignJustify } from 'react-icons/fa';
  
 function Header() {
 
+  const opciones = document.querySelector('#opciones');
+  const boton = document.querySelector('#boton');
+  const boton1= document.querySelector('#boton1');
+
+  function cambiar(){
+    opciones.removeAttribute('class','hidden'),
+    boton.setAttribute('class','hidden'),
+    boton1.setAttribute('class','block');
+  }
+  function cambiar1(){
+    opciones.setAttribute('class','hidden'),
+    boton1.setAttribute('class','hidden'),
+    boton.setAttribute('class','block');
+  }
+
   return (
-    <div className='text-slate-700 flex w-full md:w-4/6 xl:w-4/5 md:m-auto' >
+    <div className='text-slate-700 grid grid-cols-2 w-full md:w-4/6 xl:w-4/5 md:m-auto' >
       <div className='flex m-6 md:m-4'>
       <picture>
         <img src={logo} className='w-5 mr-4'></img>
@@ -12,11 +27,23 @@ function Header() {
       <h1>MARCA</h1>
       </div>
       <div className='m-6 ml-auto md:m-4 md:hidden'>
-        <button>
+        <button
+        className='block'
+        id='boton'
+        onClick={cambiar}
+        >
+          <FaAlignJustify></FaAlignJustify>
+        </button>
+
+        <button
+        className='hidden'
+        id='boton1'
+        onClick={cambiar1}
+        >
           <FaAlignJustify></FaAlignJustify>
         </button>
       </div>
-      <ul className='hidden ml-auto md:flex xl:flex' >
+      <ul id='opciones' className='hidden ml-auto md:flex xl:flex' >
         <li className='w-full p-4 rounded-lg hover:text-white hover:bg-slate-700'><a href='#'>Home</a></li>
         <li className='w-full p-4 rounded-lg hover:text-white hover:bg-slate-700'><a href='#'>About</a></li>
         <li className='w-full p-4 rounded-lg hover:text-white hover:bg-slate-700'><a href='#'>Services</a></li>
