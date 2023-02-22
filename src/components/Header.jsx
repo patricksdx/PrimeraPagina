@@ -16,11 +16,19 @@ function Header() {
           id="boton"
           onClick={() => {
             const opciones = document.querySelector("#opciones");
+            const navegacion =document.querySelector("#navegacion");
+            const navegacion1 =document.querySelector("#navegacion1");
+            const navegacion2 =document.querySelector("#navegacion2");
+            const navegacion3 =document.querySelector("#navegacion3");
             const boton = document.querySelector("#boton");
             const boton1 = document.querySelector("#boton1");
 
             opciones.removeAttribute("class"),
-              opciones.setAttribute("class","col-start-1 col-end-3 text-center");
+              opciones.setAttribute("class","col-start-1 col-end-3 text-center"),
+              navegacion.setAttribute("class","px-24 py-2"),
+              navegacion1.setAttribute("class","px-24 py-2"),
+              navegacion2.setAttribute("class","px-24 py-2"),
+              navegacion3.setAttribute("class","px-24 py-2"),
               boton.setAttribute("class", "hidden"),
               boton1.setAttribute("class", "block");
           }}
@@ -46,16 +54,16 @@ function Header() {
       </div>
       <ul id="opciones" className="hidden ml-auto md:flex xl:flex col-end">
         <li className="w-full p-4 rounded-lg hover:text-white hover:bg-slate-700">
-          <a href="#">Home</a>
+          <a id='navegacion' href="#">Home</a>
         </li>
         <li className="w-full p-4 rounded-lg hover:text-white hover:bg-slate-700">
-          <a href="#">About</a>
+          <a id='navegacion1' href="#">About</a>
         </li>
         <li className="w-full p-4 rounded-lg hover:text-white hover:bg-slate-700">
-          <a href="#">Services</a>
+          <a id='navegacion2' href="#">Services</a>
         </li>
         <li className="w-full p-4 rounded-lg hover:text-white hover:bg-slate-700">
-          <a href="#">Contact</a>
+          <a id='navegacion3' href="#">Contact</a>
         </li>
       </ul>
     </div>
