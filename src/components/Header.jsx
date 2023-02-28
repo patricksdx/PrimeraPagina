@@ -60,7 +60,7 @@ function Header() {
           <BsXLg></BsXLg>
         </button>
       </div>
-      <ul id="opciones" className="hidden ml-auto mr-0 my-auto md:flex xl:flex col-end">
+      <ul id="opciones" className="hidden my-3 ml-auto mr-0 md:flex xl:flex col-end">
         <li>
           <a id="navegacion" href="#" className="block px-6 py-1 hover:text-white hover:bg-slate-700">
             Home
