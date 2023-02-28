@@ -31,13 +31,13 @@ function Header() {
                 "class",
                 "col-start-1 col-end-3 text-center"
               ),
-              navegacion.setAttribute("class", "px-24 py-2 block"),
-              navegacion1.setAttribute("class", "px-24 py-2 block"),
-              navegacion2.setAttribute("class", "px-24 py-2 block"),
-              navegacion3.setAttribute("class", "px-24 py-2 block"),
+              navegacion.setAttribute("class", " hover:text-white hover:bg-slate-700 px-24 py-3 block"),
+              navegacion1.setAttribute("class", " hover:text-white hover:bg-slate-700 px-24 py-3 block"),
+              navegacion2.setAttribute("class", " hover:text-white hover:bg-slate-700 px-24 py-3 block"),
+              navegacion3.setAttribute("class", " hover:text-white hover:bg-slate-700 px-24 py-3 block"),
               boton.setAttribute("class", "hidden"),
               boton1.setAttribute("class", "block"),
-              nav2.setAttribute("class","hidden block z-10 group-hover:visible group-hover:block"),
+              nav2.setAttribute("class","hidden block z-10 group-hover:block px-24 py-3"),
               livnav2.setAttribute("class","group");
           }}
         >
