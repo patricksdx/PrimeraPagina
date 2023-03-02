@@ -1,23 +1,25 @@
+import { Link } from 'react-router-dom';
+
 import logo from "./icons/Logo.png";
+
 import { FaAlignJustify } from "react-icons/fa";
 import { BsXLg } from "react-icons/bs";
 
 function Header() {
   return (
-    <header className="text-slate-700 grid grid-cols-2 w-full md:w-4/6 xl:w-4/5 md:m-auto">
-      <div className="flex m-6 md:m-4">
+    <header className="text-slate-700 grid grid-cols-2 w-full md:w-2/4 xl:w-2/4 md:m-auto">
+      <Link to="/PrimeraPagina/" className="flex m-6 md:m-4" href="/">
         <picture>
           <img src={logo} className="w-5 mr-4"></img>
         </picture>
         <h1>MARCA</h1>
-      </div>
+      </Link>
       <div className="m-6 ml-auto md:m-4 md:hidden">
         <button
           className="block"
           id="boton"
           onClick={() => {
             const opciones = document.querySelector("#opciones");
-            const navegacion = document.querySelector("#navegacion");
             const navegacion1 = document.querySelector("#navegacion1");
             const navegacion2 = document.querySelector("#navegacion2");
             const navegacion3 = document.querySelector("#navegacion3");
@@ -31,7 +33,6 @@ function Header() {
                 "class",
                 "col-start-1 col-end-3 text-center"
               ),
-              navegacion.setAttribute("class", " hover:text-white hover:bg-slate-700 px-24 py-3 block"),
               navegacion1.setAttribute("class", " hover:text-white hover:bg-slate-700 px-24 py-3 block"),
               navegacion2.setAttribute("class", " hover:text-white hover:bg-slate-700 px-24 py-3 block"),
               navegacion3.setAttribute("class", " hover:text-white hover:bg-slate-700 px-24 py-3 block"),
@@ -62,41 +63,36 @@ function Header() {
       </div>
       <ul id="opciones" className="hidden my-3 ml-auto mr-0 md:flex xl:flex col-end">
         <li>
-          <a id="navegacion" href="#" className="block px-6 py-1 hover:text-white hover:bg-slate-700">
-            Home
-          </a>
-        </li>
-        <li>
-          <a id="navegacion1" href="#" className="block px-6 py-1 hover:text-white hover:bg-slate-700">
+          <Link to="/About" id="navegacion1" href="#" className="block px-6 py-1 hover:text-white hover:bg-slate-700 rounded-lg">
             About
-          </a>
+          </Link>
         </li>
         <li id="linav2" className="group" >
-          <a id="navegacion2" href="#" className="block  px-6 py-1 hover:text-white hover:bg-slate-700">
+          <Link to="/Services" id="navegacion2" href="#" className="block  px-6 py-1 hover:text-white hover:bg-slate-700 rounded-lg">
             Services
-          </a>
+          </Link>
           <ul id="nav2" className="group-hover:visible invisible absolute z-10">
             <li>
-              <a href="#" className="block px-6 py-1 hover:text-white hover:bg-slate-700">
+              <a href="#" className="block px-6 py-1 hover:text-white hover:bg-slate-700 rounded-lg">
               Service 1
               </a>
             </li>
             <li>
-              <a href="#" className="block px-6 py-1 hover:text-white hover:bg-slate-700">
+              <a href="#" className="block px-6 py-1 hover:text-white hover:bg-slate-700 rounded-lg">
               Service 2
               </a>
             </li>
             <li>
-              <a href="#" className="block px-6 py-1 hover:text-white hover:bg-slate-700">
+              <a href="#" className="block px-6 py-1 hover:text-white hover:bg-slate-700 rounded-lg">
               Service 3
               </a>
             </li>
           </ul>
         </li>
         <li >
-          <a id="navegacion3" href="#" className="block px-6 py-1 hover:text-white hover:bg-slate-700">
+          <Link to="/Contact" id="navegacion3" href="#" className="block px-6 py-1 hover:text-white hover:bg-slate-700 rounded-lg">
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </header>
